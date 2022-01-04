@@ -28,6 +28,30 @@ body {
 	border-radius: 8px;
 }
 
+/* ----------- Fonts ------------ */
+
+h1 {
+	margin-bottom: 12px;
+}
+
+h2 {
+	margin-bottom: 24px;
+}
+
+h3 {
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+
+p {
+	margin-top: 16px;
+	line-height: 1.5;
+}
+
+br {
+	margin-bottom: 20px;
+}
+
 
 /* ----------- Communities Selector ------------ */
 
@@ -41,7 +65,7 @@ body {
 	box-shadow: inset -2px 0px 3px rgba(0, 0, 0, 0.15);
 }
 
-img {
+#communities img {
 	width: 56px;
 	height: 56px;
 	border-radius: 5px;
@@ -68,7 +92,7 @@ img {
 	color: white;
 }
 
-#main-nav ul {
+#main-nav menu {
 	list-style-type: none;
 	padding: 12px 18px;
 	line-height: 2.3;
@@ -97,8 +121,43 @@ content {
 	margin: 16px 8px;
 	box-shadow: -4px 2px 3px rgba(0, 0, 0, 0.15);
 	border-radius: 8px;
+	overflow: scroll;
 }
 
+content menu {
+	height: 60px;
+	width:100%;
+	margin: auto auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+
+content menu li {
+	list-style-type: none;
+	padding: 10px;
+	text-transform: uppercase;
+	color: #707070;
+}
+
+content article {
+	margin: 24px 32px 0px 32px;
+}
+
+content #banner {
+	height: 300px;
+	width: 100%;
+	background-image: url('https://assets2.rockpapershotgun.com/lost-in-random-town.jpg/BROK/resize/1760%3E/format/jpg/quality/80/lost-in-random-town.jpg'); 
+	background-size:cover; 
+	background-position:bottom; 
+	background-repeat:no-repeat;
+}
+
+/*content #banner img {
+	width:100%;
+} */
 
 /* ----------- Side Panel ------------ */
 

@@ -17,21 +17,45 @@
 		<nav id='main-nav'>
 			<content class='dark-box'>Community X</content>
 			<h4>Groups</h4>
-			<ul class='dark-box'>
+			<menu class='dark-box'>
 				<li>Community Information</li>
 				<li>Governance</li>
 				<li>Feature Requests</li>
 				<li>Initiatives</li>
-			</ul>
+			</menu>
 			<h4>Discussions</h4>
-			<ul class='dark-box'>
+			<menu class='dark-box'>
 				<li># General</li>
 				<li># New Ideas</li>
 				<li># Announcements</li>
 				<li># Huddle</li>
-			</ul>
+			</menu>
 		</nav>
-		<content></content>
+		<content>
+			<menu>
+				<li>Overview</li>
+				<li>Comments</li>
+				<li>Bounties</li>
+			</menu>
+			<div id='banner'></div>
+			<article>
+				<h1>Umbria</h1>
+				<h3>What is Umbria?</h3>
+				<p>As a protocol, Umbra defines a simple set of standards, coupled with a singleton smart contract instance, to enable stealth addresses on Ethereum. With a stealth address, a payer can send Ether or ERC20 tokens to an address controlled by the receiver, but no one except the two parties know who that receiver is. <br>
+				On chain, the transaction looks like a simple transfer to an otherwise unused address on the Ethereum network. Off chain, the sender has used a public key published by the receiver using ENS to generate the new address. By encrypting the data used to generate the address, and announcing it via the Umbra smart contract, the sender can let the receiver know they’ve sent them a payment to a new stealth address. Only the receiver can generate the private key needed to withdraw the funds. <br>
+				By leveraging meta-transactions Umbra enables withdrawers to pay relayers for gas using the tokens they’ve received. This avoids the need to fund stealth addresses with Ether before withdrawing.</p>
+				<h3>What is the project’s status?</h3>
+				<p>The Umbra MVP went live on mainnet in June 2021. You can visit https://app.umbra.cash to send and receive stealth payments using Umbra. <br>
+				Since our launch, we’ve made iterative improvements based on user feedback. These included better mobile responsiveness and other UX enhancements. We’ve also laid the groundwork for bigger changes that are just on the horizon, including a newer, easier to user stealth key registry system, and multi-network deployments.</p>
+				<h3>Why do we need your help?</h3>
+				<p>We are grateful to our many supporters who have enabled us to get this far. There’s still lot’s more work to do!<br>
+				We believe there is so much more we can do to make Umbra an even more powerful privacy tool in the Ethereum ecosystem. Here are just a few areas of development we’re hoping to fund with your support.</p>
+				<h3>Withdrawal Integrations</h3>
+				<p>Reaping the privacy benefits of stealth addresses requires good hygiene when moving funds out of the stealth address that received the funds.<br>
+				Umbra already has some affordances for making this easier, such as gasless token withdrawals via meta transactions. Through post withdrawal integrations, we can make privacy hygiene seamless for Umbra users.<br>
+				The highest priority integration is with Tornado Cash. It would allow users to receive a payment at an Umbra stealth address and move the funds directly into the Tornado Cash mixer. Later, withdrawal the funds from Tornado to the address of your choice.<br></p>
+			</article>
+		</content>
 		<aside class='dark-box'></aside>
 		
   </body>
