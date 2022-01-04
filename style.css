@@ -9,7 +9,7 @@
 
 html {
 	height: 100%;
-	background: linear-gradient(120deg,#2C7772,#264F60)
+	background: linear-gradient(170deg,#2C7772,#264F60)
 }
 
 body {
@@ -17,9 +17,6 @@ body {
 	display: flex;
 }
 
-.dark {
-
-}
 
 .dark-box {
 	background-color: #195458;
@@ -46,12 +43,30 @@ h3 {
 p {
 	margin-top: 16px;
 	line-height: 1.5;
+	font-size: 14px;
+	font-weight: lighter;
 }
 
 br {
 	margin-bottom: 20px;
 }
 
+h3.dark {
+	color: #FAFF80;
+}
+
+h5.dark {
+	color: white
+}
+
+p.dark {
+	color: white;
+}
+
+a.dark {
+	color: #FAFF80;
+	text-decoration: none;
+}
 
 /* ----------- Communities Selector ------------ */
 
@@ -79,7 +94,7 @@ br {
 #main-nav {
 	order: 2;
 	display: block;
-	min-width: 320px;
+	min-width: 300px;
 	height: 100%;
 }
 
@@ -115,7 +130,7 @@ br {
 content {
 	order: 3;
 	display: block;
-	width: 70%;
+	width: 75%;
 	height: 100% - 32px;
 	background-color: white;
 	margin: 16px 8px;
@@ -164,9 +179,47 @@ content #banner {
 aside {
 	order: 4;
 	display: block;
-	width: 30%;
+	width: 25%;
 	height: 100% - 32px;
-	
 }
 
+aside article {
+	margin: 24px 24px 0px 24px;
+}
 
+aside div {
+	height: 18px;
+}
+
+aside ul {
+	list-style-type: none;
+	color: #FAFF80;
+}
+
+aside li {
+	height: 42px;
+	margin: auto;
+	vertical-align: middle;
+}
+
+aside li a {
+	display: inline-block;
+	margin: auto;
+	vertical-align: middle;
+	margin-left: 12px
+}
+
+aside li img {
+	display: inline-block;
+	margin: auto;
+	vertical-align: middle;
+}
+
+aside h3.stats {
+	margin: 6px 0px;
+}
+
+aside img {
+	margin-right: 12px;
+	margin-top: 6px;
+}
