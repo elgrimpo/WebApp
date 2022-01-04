@@ -1,7 +1,10 @@
+/* ----------- General ------------ */
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: Merriweather;
 }
 
 html {
@@ -14,33 +17,76 @@ body {
 	display: flex;
 }
 
+.dark {
+
+}
+
+.dark-box {
+	background-color: #195458;
+	margin: 16px 8px;
+	box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+}
+
+
+/* ----------- Communities Selector ------------ */
 
 #communities {
 	order: 1;
 	display: block;
-	min-width: 72px;
+	min-width: 80px;
 	height: 100%;
 	background-color: #195458;
-	padding-top: 12px;
+	//padding-top: 10px;
+	box-shadow: inset -2px 0px 3px rgba(0, 0, 0, 0.15);
 }
 
 img {
 	width: 56px;
 	height: 56px;
 	border-radius: 5px;
-	margin: 10px auto;
+	margin: 16px auto;
 	position: relative;
 	display: block;
 }
 
+/* ----------- Main Navigation ------------ */
+
 #main-nav {
 	order: 2;
-	left: 72px;
 	display: block;
 	min-width: 320px;
 	height: 100%;
-	border: 1px solid white;
 }
+
+#main-nav content {
+	width: auto;
+	height: 60px;
+	margin: 16px 6px;
+	padding: 20px 18px;
+	font-weight: bold;
+	color: white;
+}
+
+#main-nav ul {
+	list-style-type: none;
+	padding: 12px 18px;
+	line-height: 2.3;
+	color: white;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+#main-nav h4 {
+	margin: 24px auto 12px 32px;
+	color: #FAFF80
+}
+
+#main-nav .dark-box {
+	margin: 16px 8px 16px 16px;
+}
+
+/* ----------- Main Content ------------ */
 
 content {
 	order: 3;
@@ -50,17 +96,18 @@ content {
 	background-color: white;
 	margin: 16px 8px;
 	box-shadow: -4px 2px 3px rgba(0, 0, 0, 0.15);
-	border-radius: 5px;
-
+	border-radius: 8px;
 }
+
+
+/* ----------- Side Panel ------------ */
 
 aside {
 	order: 4;
 	display: block;
 	width: 30%;
 	height: 100% - 32px;
-	background-color: #195458;
-	margin: 16px 8px;
-	box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.15);
-	border-radius: 5px;
+	
 }
+
+
