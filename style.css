@@ -20,7 +20,7 @@ body {
 
 .dark-box {
 	background-color: #195458;
-	margin: 16px 8px;
+	margin: 0px 0px;
 	box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.15);
 	border-radius: 8px;
 }
@@ -83,10 +83,11 @@ a.dark {
 #communities img {
 	width: 56px;
 	height: 56px;
-	border-radius: 5px;
+	border-radius: 10px;
 	margin: 16px auto;
 	position: relative;
 	display: block;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------- Main Navigation ------------ */
@@ -96,15 +97,15 @@ a.dark {
 	display: block;
 	min-width: 300px;
 	height: 100%;
+	padding: 16px 8px 16px 16px;
 }
 
 #main-nav content {
 	width: auto;
 	height: 60px;
-	margin: 16px 6px;
 	padding: 20px 18px;
 	font-weight: bold;
-	color: white;
+	color: #FAFF80;
 }
 
 #main-nav menu {
@@ -117,13 +118,13 @@ a.dark {
 }
 
 #main-nav h4 {
-	margin: 24px auto 12px 32px;
+	margin: 24px auto 12px 24px;
 	color: #FAFF80
 }
 
-#main-nav .dark-box {
+/*#main-nav .dark-box {
 	margin: 16px 8px 16px 16px;
-}
+} */
 
 /* ----------- Main Content ------------ */
 
@@ -176,11 +177,12 @@ content #banner {
 
 /* ----------- Side Panel ------------ */
 
-aside {
+aside.dark-box{
 	order: 4;
 	display: block;
 	width: 25%;
 	height: 100% - 32px;
+	margin: 16px 20px 16px 8px;
 }
 
 aside article {
