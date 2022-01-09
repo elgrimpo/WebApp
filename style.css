@@ -14,15 +14,19 @@ html {
 
 body {
 	height: 100%;
-	display: flex;
 }
 
+#grid {
+	display: grid;
+	grid-template-columns: 80px 300px 3fr 1fr;
+	grid-template-rows: 80px 1fr;
+	height: 100%;
+	overflow: scroll;
+}
 
 .dark-box {
 	background-color: #195458;
-	margin: 0px 0px;
 	box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.15);
-	border-radius: 8px;
 }
 
 /* ----------- Fonts ------------ */
@@ -71,12 +75,9 @@ a.dark {
 /* ----------- Communities Selector ------------ */
 
 #communities {
-	order: 1;
-	display: block;
-	min-width: 80px;
-	height: 100%;
+	grid-column: 1;
+	grid-row: 1 / span 2;
 	background-color: #195458;
-	//padding-top: 10px;
 	box-shadow: inset -2px 0px 3px rgba(0, 0, 0, 0.15);
 }
 
@@ -93,19 +94,18 @@ a.dark {
 /* ----------- Main Navigation ------------ */
 
 #main-nav {
-	order: 2;
-	display: block;
-	min-width: 300px;
-	height: 100%;
-	padding: 16px 8px 16px 16px;
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	padding: 20px 16px;
 }
 
-#main-nav content {
+#community-info {
 	width: auto;
 	height: 60px;
 	padding: 20px 18px;
 	font-weight: bold;
 	color: #FAFF80;
+	border-radius: 5px;
 }
 
 #main-nav menu {
@@ -115,6 +115,7 @@ a.dark {
 	color: white;
 	font-size: 14px;
 	font-weight: lighter;
+	border-radius: 5px;
 }
 
 #main-nav h4 {
@@ -122,36 +123,34 @@ a.dark {
 	color: #FAFF80
 }
 
-/*#main-nav .dark-box {
-	margin: 16px 8px 16px 16px;
-} */
 
 /* ----------- Main Content ------------ */
 
-content {
-	order: 3;
-	display: block;
-	width: 75%;
-	height: 100% - 32px;
-	background-color: white;
-	margin: 16px 8px;
-	box-shadow: -4px 2px 3px rgba(0, 0, 0, 0.15);
-	border-radius: 8px;
-	overflow: scroll;
-}
-
-content menu {
-	height: 60px;
-	width:100%;
-	margin: auto auto;
+#middle-nav {
+	grid-column: 3;
+	grid-row: 1;
+	z-index: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: white;
+	margin-top: 20px;
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: 1px solid lightgrey;
+}
+
+content {
+	grid-column: 3;
+	grid-row: 2;
+	background-color: white;
+	box-shadow: -4px 2px 3px rgba(0, 0, 0, 0.15);
+	overflow: scroll;
+	margin-bottom: 20px;
+	border-radius: 0px 0px 10px 10px;
 }
 
 
-content menu li {
+#middle-nav li {
 	list-style-type: none;
 	padding: 10px;
 	text-transform: uppercase;
@@ -171,18 +170,14 @@ content #banner {
 	background-repeat:no-repeat;
 }
 
-/*content #banner img {
-	width:100%;
-} */
 
 /* ----------- Side Panel ------------ */
 
-aside.dark-box{
-	order: 4;
-	display: block;
-	width: 25%;
-	height: 100% - 32px;
-	margin: 16px 20px 16px 8px;
+aside {
+	grid-column: 4;
+	grid-row: 1 / span 2;
+	margin: 20px;
+	border-radius: 10px;
 }
 
 aside article {

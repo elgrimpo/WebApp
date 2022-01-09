@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>replit</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  </head>
-  <body>
 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+	 rel="stylesheet">
+</head>
+
+<body>
+	<div id='grid'>
 		<!––----------- Community Selector ------------------>
 
-    <nav id='communities'>
+		<nav id='communities'>
 			<img src='https://i1.wp.com/www.peace-ed-campaign.org/wp-content/uploads/2016/06/amnesty-international.png?resize=600%2C438&ssl=1'>
 			<img src='https://preview.redd.it/w8c6alvbipr71.jpg?width=960&crop=smart&auto=webp&s=478e09db8ba5b762813a9509e3fb512d04f35df8'>
 		</nav>
@@ -23,7 +26,7 @@
 
 
 		<nav id='main-nav'>
-			<content class='dark-box'>Community X</content>
+			<div id='community-info' class='dark-box'>Community X</div>
 			<h4>Groups</h4>
 			<menu class='dark-box'>
 				<li>Community Information</li>
@@ -43,12 +46,13 @@
 		
 		<!––----------- Main Content Area ------------------>
 		
+		<menu id='middle-nav'>
+			<li>Overview</li>
+			<li>Comments</li>
+			<li>Bounties</li>
+		</menu>
+			
 		<content>
-			<menu>
-				<li>Overview</li>
-				<li>Comments</li>
-				<li>Bounties</li>
-			</menu>
 			<div id='banner'></div>
 			<article>
 				<h1>Umbria</h1>
@@ -64,6 +68,12 @@
 				We believe there is so much more we can do to make Umbra an even more powerful privacy tool in the Ethereum ecosystem. Here are just a few areas of development we’re hoping to fund with your support.</p>
 				<h3>Withdrawal Integrations</h3>
 				<p>Reaping the privacy benefits of stealth addresses requires good hygiene when moving funds out of the stealth address that received the funds.<br>
+				Umbra already has some affordances for making this easier, such as gasless token withdrawals via meta transactions. Through post withdrawal integrations, we can make privacy hygiene seamless for Umbra users.<br>
+				The highest priority integration is with Tornado Cash. It would allow users to receive a payment at an Umbra stealth address and move the funds directly into the Tornado Cash mixer. Later, withdrawal the funds from Tornado to the address of your choice.<br>
+				Reaping the privacy benefits of stealth addresses requires good hygiene when moving funds out of the stealth address that received the funds.<br>
+				Umbra already has some affordances for making this easier, such as gasless token withdrawals via meta transactions. Through post withdrawal integrations, we can make privacy hygiene seamless for Umbra users.<br>
+				The highest priority integration is with Tornado Cash. It would allow users to receive a payment at an Umbra stealth address and move the funds directly into the Tornado Cash mixer. Later, withdrawal the funds from Tornado to the address of your choice.<br>
+				Reaping the privacy benefits of stealth addresses requires good hygiene when moving funds out of the stealth address that received the funds.<br>
 				Umbra already has some affordances for making this easier, such as gasless token withdrawals via meta transactions. Through post withdrawal integrations, we can make privacy hygiene seamless for Umbra users.<br>
 				The highest priority integration is with Tornado Cash. It would allow users to receive a payment at an Umbra stealth address and move the funds directly into the Tornado Cash mixer. Later, withdrawal the funds from Tornado to the address of your choice.<br></p>
 			</article>
@@ -97,6 +107,6 @@
 				<img src='Media/User3.png'>
 			</article>
 		</aside>
-		
+		</div>
   </body>
 </html>
